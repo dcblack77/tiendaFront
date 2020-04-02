@@ -1,0 +1,20 @@
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="colchones">Colchones</button>
+  <button mat-menu-item [matMenuTriggerFor]="somieres">Somieres</button>
+</mat-menu>
+
+<mat-menu #colchones="matMenu">
+  <button mat-menu-item>Fishes</button>
+  <button mat-menu-item>Amphibians</button>
+  <button mat-menu-item>Reptiles</button>
+  <button mat-menu-item>Birds</button>
+  <button mat-menu-item>Mammals</button>
+</mat-menu>
+
+<mat-menu #somieres="matMenu">
+  <button mat-menu-item>Insects</button>
+  <button mat-menu-item>Molluscs</button>
+  <button mat-menu-item>Crustaceans</button>
+</mat-menu>
+
